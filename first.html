@@ -1,29 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <script src="script.js"></script>
-    <title>Generate Random Password</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random Password Generator In Javascript</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css'>
+  <script src="script.js"></script>
+  <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
+
 <body>
-    <div class="container">
-        <div class="english">
-          <label for="en">English letter</label>
-          <input type="checkbox" name="en">
-        </div>
-        <div class="number">
-          <label for="num">Number</label>
-          <input type="checkbox" name="num">
-        </div>
-        <div class="symbol">
-          <label for="sym">Symbol</label>
-          <input type="checkbox" name="sym">
-        </div>
-        <button class="btn">Generate</button>
-        <div class="result"></div>
-     </div>
+  <div class="container">
+    <div class="password-generator">
+      <h2>Random Atan Abi (ama advenced)</h2>
+      <div class="password">
+        <p id="sifrealanı"></p>
+      </div>
+      <div>
+        <label for="length">Uzunluk</label>
+        <input type="number" id="length" min="6" max="24" value="6">
+      </div>
+      <div>
+        <label for="symbol">Sembol ekle</label>
+        <input type="checkbox" id="symbol" checked>
+      </div>
+      <div>
+        <label for="number">Sayı ekle</label>
+        <input type="checkbox" id="number" checked>
+      </div>
+      <div>
+        <label for="lowerCase">Küçük harf ekle</label>
+        <input type="checkbox" id="lowerCase" checked>
+      </div>
+      <div>
+        <label for="upperCase">Büyük harf ekle</label>
+        <input type="checkbox" id="upperCase" checked>
+      </div>
+      <button onclick="createPassword()">Şifremi Oluştur</button>
+    </div>
+  </div>
 </body>
+
 </html>
