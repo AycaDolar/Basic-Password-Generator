@@ -15,29 +15,38 @@
     <div class="password-generator">
       <h2>Random Atan Abi (ama advenced)</h2>
       <div class="password">
-        <p id="sifrealanı"></p>
+        <p id="sifrealanı" class="password"></p>
       </div>
       <div>
         <label for="length">Uzunluk</label>
         <input type="number" id="length" min="6" max="24" value="6">
+        <script>
+            const length = document.getElementById("length");
+          if(length.value < "6"){
+            alert("you cant enter number smaller than 6")
+          }
+          else if( length.value> "24"){
+            alert("you cant enter number bigger then 24")
+          }
+        </script>
       </div>
       <div>
-        <label for="symbol">Sembol ekle</label>
+        <label for="symbol" class="checkboxline">Sembol ekle</label>
         <input type="checkbox" id="symbol" checked>
       </div>
       <div>
-        <label for="number">Sayı ekle</label>
+        <label for="number" class="checkboxline">Sayı ekle</label>
         <input type="checkbox" id="number" checked>
       </div>
       <div>
-        <label for="lowerCase">Küçük harf ekle</label>
+        <label for="lowerCase" class="checkboxline">Küçük harf ekle</label>
         <input type="checkbox" id="lowerCase" checked>
       </div>
       <div>
-        <label for="upperCase">Büyük harf ekle</label>
+        <label for="upperCase" class="checkboxline">Büyük harf ekle</label>
         <input type="checkbox" id="upperCase" checked>
       </div>
-      <button onclick="createPassword()">Şifremi Oluştur</button>
+      <button onclick="createPassword()" class="button">Şifremi Oluştur</button>
     </div>
   </div>
 </body>
