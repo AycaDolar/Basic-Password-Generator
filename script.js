@@ -19,9 +19,9 @@ const generaterandom = [
   function symbol() {
     return keys.symbol[Math.floor(Math.random() * keys.symbol.length)];
   },
-  (keySymbol) => {
-    return keys[keySymbol][Math.floor(Math.random() * keys[keySymbol].length)];
-  }
+  // (keySymbol) => {
+  //   return keys[keySymbol][Math.floor(Math.random() * keys[keySymbol].length)];
+  // }
 ];
 
 

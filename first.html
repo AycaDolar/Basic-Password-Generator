@@ -8,43 +8,38 @@
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css'>
   <script src="script.js"></script>
   <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <div class="container">
-    <div class="password-generator">
-      <h2>Random Atan Abi (ama advenced)</h2>
+  <div class="center" id="mydiv">
+    <div class="password-generator" >
+      <h2 style="color: rgb(255, 0, 191);">Random Atan Dayı</h2>
+    
       <div class="password">
         <p id="sifrealanı" class="password"></p>
       </div>
-      <div>
+      <div style="display: table; width: 100%;">
         <label for="length">Uzunluk</label>
         <input type="number" id="length" min="6" max="24" value="6">
-        <script>
-            const length = document.getElementById("length");
-          if(length.value < "6"){
-            alert("you cant enter number smaller than 6")
-          }
-          else if( length.value> "24"){
-            alert("you cant enter number bigger then 24")
-          }
-        </script>
       </div>
-      <div>
-        <label for="symbol" class="checkboxline">Sembol ekle</label>
-        <input type="checkbox" id="symbol" checked>
+      <div style="display: table; width: 100&;">
+        <label for="symbol" class="checkboxline" >Sembol ekle</label>
+        <input label = "checkbox" type="checkbox" id="symbol" checked>
       </div>
-      <div>
+      <div style="display: table; width: 100&;">
         <label for="number" class="checkboxline">Sayı ekle</label>
-        <input type="checkbox" id="number" checked>
+        <input label = "checkbox" type="checkbox" id="number" checked>
       </div>
-      <div>
+      <div style="display: table; width: 100&;">
         <label for="lowerCase" class="checkboxline">Küçük harf ekle</label>
-        <input type="checkbox" id="lowerCase" checked>
+        <input label = "checkbox" type="checkbox" id="lowerCase" checked>
       </div>
-      <div>
+      <div style="display: table; width: 100&;">
         <label for="upperCase" class="checkboxline">Büyük harf ekle</label>
-        <input type="checkbox" id="upperCase" checked>
+        <input label = "checkbox" type="checkbox" id="upperCase" checked>
       </div>
       <button onclick="createPassword()" class="button">Şifremi Oluştur</button>
     </div>
