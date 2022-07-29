@@ -24,14 +24,33 @@ const generaterandom = [
   // }
 ];
 
+function closeVisibility(alertText) {
+  const customalert = document.getElementById("myalert");
+  customalert.style.visibility = "visible";
+  customalert.innerText= alertText;
+  setTimeout(() => {
+    customalert.style.visibility = "hidden";
+  }, 5000);
+}
+
+function returnorigin(){
+  var change = document.getElementById("length");
+  if(change.value <6){
+   change.value = 6;
+  }
+  else if ((change.value)>24){
+    change.value = 24;
+  }
+
+}
 
 function createPassword() {
   const length = document.getElementById("length");
   if (Number(length.value) < 6) {
-    alert("you cant enter number smaller than 6");
+    closeVisibility("you cant enter number smaller than 6");
     return;
   } else if (Number(length.value) > 24) {
-    alert("you cant enter number bigger then 24");
+    closeVisibility("you cant enter number bigger then 24");
     return;
   }
 
@@ -44,7 +63,7 @@ function createPassword() {
 
   if (upper + lower + number + symbol === 0) {
     //bunu new line a nasıl aktaracağımı anlmadım (alert dışında)
-    alert("En az bir kutuyu işaretlemen lazım");
+    closeVisibility("En az bir kutuyu işaretlemen lazım");
     return;
   }
 
