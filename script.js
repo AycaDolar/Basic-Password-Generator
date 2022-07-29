@@ -27,21 +27,19 @@ const generaterandom = [
 function closeVisibility(alertText) {
   const customalert = document.getElementById("myalert");
   customalert.style.visibility = "visible";
-  customalert.innerText= alertText;
+  customalert.innerText = alertText;
   setTimeout(() => {
     customalert.style.visibility = "hidden";
   }, 5000);
 }
 
-function returnorigin(){
+function returnorigin() {
   var change = document.getElementById("length");
-  if(change.value <6){
-   change.value = 6;
-  }
-  else if ((change.value)>24){
+  if (change.value < 6) {
+    change.value = 6;
+  } else if (change.value > 24) {
     change.value = 24;
   }
-
 }
 
 function createPassword() {

@@ -1,40 +1,43 @@
 .center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
 }
 
 #mydiv {
-    position:absolute;
-    top: 50%;
-    left: 50%;
-    width:30em;
-    display: grid;
-    height:18em;
-    margin-top: -9em; 
-    margin-left: -15em; 
-    border: 1px solid #ccc;
-    background-color: #ecf8f6;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 30em;
+  display: grid;
+  height: 18em;
+  margin-top: -9em;
+  margin-left: -15em;
+  border: 1px solid #ccc;
+  background-color: #ecf8f6;
 }
 
-.checkbox{
+.myseconddiv{
+  display: table;
+   width: 100%;
+}
+.checkbox {
   text-align: right;
 }
 
 .checkboxline {
-  text-align:left;
+  text-align: left;
   margin-top: 5px;
   margin-bottom: 10px;
   border: 0mm;
   padding-left: 5px;
   padding-right: 5px;
   color: #fe019a;
-  text-decoration:double;
+  text-decoration: double;
   display: table-cell;
   width: 100%;
 }
-
 
 .password {
   min-width: 280px;
@@ -46,14 +49,13 @@
   color: #5c0847;
   background-color: #f5bacc;
   margin-bottom: 50px;
-
 }
 
-body{
-  font-family: 'Edu VIC WA NT Beginner', cursive; 
-} 
+body {
+  font-family: "Edu VIC WA NT Beginner", cursive;
+}
 
-input[type=checkbox] {
+input[type="checkbox"] {
   float: right;
   display: table-cell;
 }
@@ -66,21 +68,35 @@ label {
 .tooltip {
   position: relative;
   display: inline-block;
-  border-bottom: 1px dotted black; 
+  border-bottom: 1px dotted black;
 }
 
 .tooltip .tooltiptext {
   visibility: hidden;
-  width: 120px;
+  min-width: max-content;
   background-color: rgb(121, 0, 67);
   color: #fff;
   text-align: center;
-  padding: 5px 0;
   border-radius: 6px;
   position: absolute;
   z-index: 1;
+  padding: 5px 10px 10px 10px;
 }
 
 .tooltip:hover .tooltiptext {
   visibility: visible;
 }
+
+
+
+/* .material-icons {
+  text-align: center;
+  margin-right: 10px;
+  font-size: 2.5rem;
+  text-align: center;
+  width: 20%;
+}
+
+.spotlight-text {
+  width: 80%;
+} */
